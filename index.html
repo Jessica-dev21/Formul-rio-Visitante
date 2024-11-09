@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Visitantes CR</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h3> Cadasto de Visitante</h3>
+        </div>
+        <div class="form-container">
+        <div class="form-header">
+            <p>Fórmulario</p>
+        </div>
+        
+        <!-- Corpo do formulario -->
+        <div class="form-body">
+            <h1 class="form-title">Registro de Presença de Visitante</h1>
+            <p class="vers">"Eu era estrangeiro e me acolhestes em casa". <span class="verse">Mateus 25, 35c</span></p>
+            <form >
+                <!-- Dados Pessoais -->
+                <h2>Dados pessoais:</h2>
+                
+                <div class="box-input">
+                    <label for="name">Nome: <span class="required-field">*</span></label>
+                    <input type="text" 
+                    name="name"
+                    id="name"
+                    class="block"
+                    placeholder="Digite o nome completo"
+                    minlength="1"
+                    required>
+                </div>
+
+                <div class="box-input">
+                    <label for="date-birth">Data de nascimento: <span class="required-field">*</span></label>
+                    <input type="date" 
+                    name="date-birth"
+                    id="date-birth"
+                    class="block"
+                    required>
+                </div>
+
+                <div class="box-input">
+                    <label for="Gender">Gênero: <span class="required-field">*</span></label>
+                    <input type="text" 
+                    name="Gender"
+                    id="Gender"
+                    class="block"
+                    placeholder="Digite o gênero"
+                    minlength="1"
+                    required>
+                </div>
+
+                <div class="box-input">
+                    <label for="phone">Telefone: <span class="required-field">*</span></label>
+                    <input type="number" 
+                    name="phone"
+                    id="phone"
+                    class="block"
+                    placeholder="Digite o telefone"
+                    minlength="1"
+                    required>
+                </div>
+
+                <div class="box-input">
+                    <label for="email">E-mail: <span class="required-field">*</span></label>
+                    <input type="email" 
+                    name="email"
+                    id="email"
+                    class="block"
+                    placeholder="Digite o e-mail"
+                    minlength="1"
+                    required>
+                </div>
+
+                <!-- Dados Religiosas: -->
+                <h2>Informações Religiosas:</h2>
+                
+                <div class="box-input">
+                    <label for="name">Denominação religiosa anterior:</label>
+                    <input type="text" 
+                    name="name"
+                    id="name"
+                    class="block"
+                    placeholder="Se houver"
+                    >
+                </div>
+
+                <div class="box-input">
+                   
+                    <p>Interesse em servir na igreja?</p>
+                    <input type="radio" id="yes" name="servir"/>
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" id="no" name="servir"/>
+                    <label for="no">Não</label>
+
+                    <input type="radio" id="tal" name="servir"/>
+                    <label for="tal">Talvez</label>
+                </div>
+
+                <!-- Informações sobre a visita: -->
+                <h2>Informações sobre a Visita:</h2>
+                
+                <div class="box-input">
+                    <label for="dat-vist">Data da visita: <span class="required-field">*</span></label>
+                    <input type="date" 
+                    name="dat-vist"
+                    id="dat-vist"
+                    class="block"
+                    placeholder="Se houver"
+                    required>
+                </div>
+                
+                <div class="box-input">
+                   
+                    <p>Como conheceu a igreja?</p>
+                    <input type="radio" id="invitation" name="he-knew" required/>
+                    <label for="invitation">Convite</label>
+
+                    <input type="radio" id="social-media" name="he-knew"required/>
+                    <label for="social-media">Redes Sociais</label>
+
+                    <input type="radio" id="evangelism" name="he-knew" required/>
+                    <label for="evangelism">Evangelismo</label>
+                    
+                </div>
+
+                <div class="box-input">
+                   <label for="invited-by">Convidado por quem? <span class="required-field">*</span></label>
+                   <input type="text" id="invited-by" name="who" placeholder="Digite o nome de quem convidou.">
+                </div>
+                
+
+
+                 <!-- Observações -->
+
+                 <h2>Observações:</h2>
+                
+                <div class="box-input">
+                    <label for="observation"></label>
+                    <textarea name="observation" maxlength="2000" placeholder="Descreva algo mias caso necessário."></textarea>
+                 </div>
+
+                 <input type="submit" value="Enviar" class="btn-submit">
+
+            </form>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
